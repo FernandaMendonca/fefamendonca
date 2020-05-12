@@ -1,0 +1,34 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1508615218533-a98467aeaaad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+    font-family: Arial;
+    background-size: auto 100vh;
+    height: 100vh;
+}
+
+.menu {
+    background-color: white;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.subtitle,
+.title {
+    color: whitesmoke;
+    text-align: center;
+}
