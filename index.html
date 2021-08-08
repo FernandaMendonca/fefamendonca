@@ -1,24 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico">
     <title>Fernanda Mendonça</title>
 </head>
 
 <body>
     <header>
-        <nav class=" menu ">
+        <nav class="menu">
             <ul>
-                <li><a href="# ">Sobre</a></li>
-                <li><a href="# ">Portfólio</a></li>
-                <li><a href="# ">Contato</a></li>
+                <li><a title="home" href="#home">home</a></li>
+                <li><a title="portfólio" href="#portfolio">portfólio</a></li>
+                <li><a title="contato" href="#contato">contato</a></li>
             </ul>
         </nav>
-        <h1 class="title ">Fernanda Mendonça</h1>
-        <h2 class="subtitle ">jr. frontend developer</h2>
     </header>
+    <main id="home" class="home">
+        <div class="home__info">
+            <img class="home__info__img" alt="Fernanda Mendonça" src="./img/fefa.jpeg">
+            <div class="home__info__bio">
+                <h1 class="home__titulo"> Fernanda Mendonça </h1>
+                <p>desenvolvedora front-end</p>
+                <span class="home__info__span">Olá! Eu sou a Fernanda, estudante de Sistemas de Informação na
+                    Universidade
+                    Presbiteriana Mackenzie (UPM).
+                    Atualmente, sou estagiária de desenvolvimento Front-End e estou constantemente estudando sobre HTML,
+                    CSS, JavaScript e Acessibilidade na Web.</span>
+                <div class="home__info__stacks">
+                    <img title="CSS 3" class="stack__img" alt="CSS 3" src="./img/css.svg">
+                    <img title="HTML 5" class="stack__img" alt="HTML 5" src="./img/html5.svg">
+                    <img title="JavaScript" class="stack__img" alt="JavaScript" src="./img/js.svg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__titulo"> portfólio </h2>
+        <div class="portfolio__projetos">
+            <figure>
+                <a title="ir para o github de Fernanda Mendonça" 
+                href="https://github.com/FernandaMendonca/sw-management" target="_blank">
+                <img class="portfolio__img" src="img/sw-mgm.png" alt="Gerenciador de Star Wars">
+                </a>
+                <figcaption>Gerenciador de Star Wars - Vue.js</figcaption>
+            </figure>
+            <figure>
+                <a title="ir para o github de Fernanda Mendonça" 
+                href="https://github.com/FernandaMendonca/basketball-app" target="_blank">
+                    <img class="portfolio__img" src="img/basketball-app-login.png" 
+                    alt="Login - Gerenciador de Jogadores de Basquete">
+                </a>
+                <figcaption>App de Login - React.js</figcaption>
+            </figure>
+            <figure class="hidden">
+                <a title="ir para o github de Fernanda Mendonça" 
+                href="https://github.com/FernandaMendonca/" target="_blank">
+                    <img class="portfolio__img" src="" 
+                    alt="Landing Page - 180">
+                </a>
+                <figcaption>Violência Contra a Mulher - </figcaption>
+            </figure>
+            <figure class="hidden">
+                <a title="ir para o github de Fernanda Mendonça" 
+                href="https://github.com/FernandaMendonca/" target="_blank">
+                    <img class="portfolio__img" src="" 
+                    alt="Landing Page - Go Vegan">
+                </a>
+                <figcaption>Veganismo - </figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer id="contato" class="contato">
+        <div class="grid icons">
+            <a title="ir para o github de Fernanda Mendonça" href="https://github.com/FernandaMendonca"
+                target="_blank"><i class="fab fa-github"></i></a>
+            <a title="ir para o linkedin de Fernanda Mendonça" href="https://www.linkedin.com/in/fernanda-mendonca/"
+                target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© { fefa | 2021 }</p>
+    </footer>
 </body>
 
 </html>

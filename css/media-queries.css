@@ -1,0 +1,39 @@
+@media (min-width: 880px) {
+    .portfolio__projetos {
+        align-content: center;
+        grid-template-columns: repeat(3, 260px);
+        justify-content: space-around;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 560px) {
+    .portfolio__projetos {
+        grid-template-columns: 240px 240px;
+    }
+    nav.menu ul {
+        display: flex;
+    }
+    nav.menu li:last-child {
+        margin-right: 0;
+    }
+    nav.menu a {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+    .home__titulo {
+        line-height: 1;
+        margin-top: 10px;
+    }
+}
